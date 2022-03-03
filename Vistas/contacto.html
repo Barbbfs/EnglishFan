@@ -42,30 +42,26 @@
             </div>
         </nav>
     </header>
-    <main>
-        <h3>Contactate con nosotros!</h3>
-        <p>Dejanos tus datos para que nuestro equipo <br>
-        pueda asesorarte.</p>
-        <img class="imagenContacto" src="../Imágenes/foto 8.jpg" alt="">
-    </main>
-    <fieldset class="form">
-        <legend>Contactanos</legend>
-        <label for="Nombre y apellido">Nombre y apellido</label>
-        <input type="text" placeholder="Ingresá tu nombre" id="Nombre">
-        <br>
-        <label for="Email">Email</label>
-        <input type="email" placeholder="Email" id="Email">
-        <br>
-        <label for="Teléfono">Teléfono</label>
-        <input type="number" placeholder="Número de teléfono">
-        <br>
-        Mensaje <textarea name="" id="" cols="50" rows="10"></textarea>
-        <br>
-        <input class="boton" type="submit" value="Enviar">
-    </fieldset>
-
-    <footer class="footer">
-        <p>2022. Todos los derechos reservados</p>
-    </footer>
+    <section  class= "gridContacto" >
+        <div class="imagenContacto">
+                <img class="fotoContacto" src="../Imágenes/foto 8.jpg" alt="">
+                <h2 class="subtituloContacto">Contactate con nosotros!</h2>
+                <p class="textoContacto">Dejanos tus datos para que nuestro equipo <br>
+                        pueda asesorarte. </p>
+        </div>
+        <div class="formContacto" class="mb-3" >
+            <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Juan Perez">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Juanperez@gmail.com">
+            <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="1166552211">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <input class="boton" type="submit" value="Enviar">
+    </section>
+<footer class="footer">
+    <p class="textoFooter" >2022. Todos los derechos reservados</p>
+</footer>
 </body>
 </html>
