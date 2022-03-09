@@ -11,10 +11,17 @@ body{
 
 .header{
     background-color: #012f85;
+    height: 150;
 }
 
 .navbar{
     margin-left: 35px;
+}
+
+.logo{
+    width: 130px;
+    height: 80px;
+    margin-left: 0px;
 }
 
 ul li{
@@ -70,6 +77,7 @@ ul li a{
     color: #ce1125;
     margin-top: 100px;
     margin-left: 10px;
+    margin-bottom: 40px;
 }
 
 .tituloCard{
@@ -128,8 +136,12 @@ ul li a{
     Height: 35px;
     color: #FFFFFF;
     font-weight: 500;
-    background-color: #ce1125;
+    background-color: #ce11248c;
     border-radius: 5px;
+}
+
+.boton:hover{
+    background-color:#ce1125;
 }
 
 .footer{
@@ -173,73 +185,51 @@ ul li a{
 }
 
 .imagenesAlumnos1{
-    grid-area: foto1;
-    Width: 221px;
-    Height: 110,06px;
+    Width: 1200px;
+    Height: 720px;
+    margin-left: 60px;
+    margin-top: 30px;
 }
 
 .imagenesAlumnos2{
-    grid-area: foto2;
-    Width: 221px;
-    Height: 110,06px;
+    Width: 1200px;
+    Height: 720px;
+    margin-left: 60px;
+    margin-top: 30px;
 }
 
 .imagenesAlumnos3{
-    grid-area: foto3;
-    Width: 221px;
-    Height: 110,06px;
+    Width: 1200px;
+    Height: 720px;
+    margin-left: 60px;
+    margin-top: 30px;
 }
 
 .textoAlumnos1{
-    grid-area: texto1;
-    font-size: 14px;
+    font-size: 25px;
     font-style: italic;
+    margin-left: 60px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .textoAlumnos2{
-    grid-area: texto2;
-    font-size: 14px;
+    font-size: 25px;
     font-style: italic;
+    margin-left: 60px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .textoAlumnos3{
-    grid-area: texto3;
-    font-size: 14px;
+    font-size: 25px;
     font-style: italic;
+    margin-left: 60px;
+    margin-top: 20px;
+    text-align: center;
 }
 
-.plan1Cursos{
-    grid-area: plan1;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    background-color: #ffd250;
-    align-items: center;
-    justify-items: center;
-    height: 200px;
-}
 
-.plan2Cursos{
-    grid-area: plan2;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    background-color: #ffd250;
-    align-items: center;
-    justify-items: center;
-    height: 200px;
-}
-
-.plan3Cursos{
-    grid-area: plan3;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    background-color: #ffd250;
-    align-items: center;
-    justify-items: center;
-    height: 200px;
-}
 
 /*VISTA TALLERES CORTOS*/
 
@@ -270,16 +260,13 @@ ul li a{
     margin-top: 0px;
 }
 
-.parrafoTallere{
-    grid-area: texto;
-}
-
 .imagenTalleres{
     grid-area: foto;
     margin-left: 150px;
     height: 280px;
     margin-top: 30px;
 }
+
 
 /* VISTA CONTACTOS */
 
@@ -332,6 +319,58 @@ ul li a{
     margin-left: 30px;
 }
 
+
+/*VISTA EJERCICIOS GRATIS */
+
+.imagenPrincipal4 {
+    background-image: url(../Imágenes/foto\ 9.jpg);
+    background-size: cover;
+    height: 582px;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 300px;
+}
+
+.ejercicios{
+    background-color: #ffd250;
+    height: 150px;
+    width: 550px;
+    margin-left: 20px;
+    border-radius: 10px;
+
+}
+
+.listajercicios{
+    margin-top: 20px;
+}
+
+.contenedorEjercicios{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.parrafoEjercicios{
+    margin-left: 60px;
+    margin-top: 0px;
+}
+
+.botonEjercicios{
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    Width: 150px;
+    Height: 35px;
+    color: #FFFFFF;
+    font-weight: 500;
+    background-color: #ce1125;
+    border-radius: 5px;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width:768px) {
@@ -361,8 +400,6 @@ ul li a{
         border-radius: 5%;
         background-color: #5e5e5e8f;
         border-color: rgba(0, 0, 0, 0);
-        width: 300px;
-        height: 150px;
         margin-top: -150px;
         margin-left: 20px;
     }
@@ -397,6 +434,34 @@ ul li a{
         margin-top: 20px;
     
     }
+
+    .descripcion{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        grid-template-areas: "titulo"
+                            "foto";
+        justify-items: center;
+        align-items: center;
+        row-gap: 50px;
+        margin: 50px;
+    
+    }
+
+    .subtituloTalleres{
+        grid-area: titulo;
+        font-size: 30px;
+        color: #ce1125;
+        margin-top: 0px;
+    }
+    
+    .imagenTalleres{
+        grid-area: foto;
+        margin-left: 150px;
+        height: 280px;
+        margin-top: 30px;
+    }
+
 }
 
 @media screen and (max-width:480px) {
@@ -426,8 +491,6 @@ ul li a{
         border-radius: 5%;
         background-color: #5e5e5e8f;
         border-color: rgba(0, 0, 0, 0);
-        width: 150px;
-        height: 300px;
         margin-top: -150px;
         margin-left: 20px;
     }

@@ -17,7 +17,8 @@
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">English Fan</a>
+                    <a class="navbar-brand" href="#"></a>
+                    <img src="../Imágenes/logo-05.png" class="logo" alt="">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -43,54 +44,77 @@
                 </div>
             </nav>
     </header>
-            <main>
-                <section class="imagenPrincipal2" ></section>
-                <div class="contenedorImagen">
-                        <h2 class="subtitulo">Estudia con nosotros</h2>
-                        <p class="textoImagen">Clases en directo y diferidas para que veas cuando quieras <br>
-                        Preparación para exámenes internacionales <br>
-                        Amplios horarios de cursado </p>
-                </div>
-            </main>
-    </header>
+    <section class="imagenPrincipal2" ></section>
+      <div class="contenedorImagen">
+          <h2 class="subtitulo">Estudia con nosotros</h2>
+            <p class="textoImagen">Clases en directo y diferidas para que veas cuando quieras <br>
+            Preparación para exámenes internacionales <br>
+            Amplios horarios de cursado </p>
+      </div>
 <!--Contenido principal con testimonios de alumnxs-->
-    <main>
-        <h2 class="subtituloDos">Qué dicen nuestrxs alumnxs <h2>
-        <div class="contenedorTestimonios">
-            <img class="imagenesAlumnos1" src="../Imágenes/estudiante 1.jpg" alt="">
-            <img class="imagenesAlumnos2"  src="../Imágenes/estudiante 2.jpg" alt="">
-            <img class="imagenesAlumnos3"  src="../Imágenes/estudiante 3.jpg" alt="">
-            <p class="textoAlumnos1">"Lorem ipsum dolor sit amet consectetur. <br> 
-                                    Dicta, vel consectetur"</p>
-            <p class="textoAlumnos2">"Lorem ipsum dolor sit amet consectetur. <br> 
-                                    Dicta, vel consectetur"</p>
-            <p class="textoAlumnos3">"Lorem ipsum dolor sit amet consectetur. <br> 
-                                    Dicta, vel consectetur"</p>
+    <h2 class="subtituloDos">Qué dicen nuestrxs alumnxs <h2>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../Imágenes/estudiante 1.jpg" class="imagenesAlumnos1" class="d-block w-100" alt="...">
+              <p class="textoAlumnos1"> "Los grupos son realmente reducidos y estamos todos a la par en <br> 
+              cuando a nivel". 
+              </p>
+          </div>
+          <div class="carousel-item">
+              <img src="../Imágenes/estudiante 2.jpg" class="imagenesAlumnos2" class="d-block w-100" alt="...">
+                <p class="textoAlumnos2"> "Las clases de conversacion grupales son super divertidas y dinamicas". 
+                </p>
+          </div>
+          <div class="carousel-item">
+              <img src="../Imágenes/estudiante 3.jpg" class="imagenesAlumnos3"  class="d-block w-100" alt="...">
+                <p class="textoAlumnos2"> "Aprendes a tu ritmo y en relacion a tu nivel previo. Muy recomendable". 
+                </p>
+          </div>
         </div>
-    </main>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 <!--Presentación de cursos-->
 <h3 class="subtituloDos">Nuestros cursos</h3>
-<section class="articulos">
-    <article class="plan1Cursos">
-        <h4 class="subtituloTres">Clases individuales</h4>
-        <p class="textoCajas">Profesores calificados, con amplia experiencia <br> 
-                            para acompañarte en el proceso de aprendizaje. </p>
-        <button class="boton">Ver mas</button>
-        </article>      
-        <article class="plan2Cursos">
-        <h4 class="subtituloTres">Cursos grupales</h4>
-        <p class="textoCajas"> Con material digital. Nosotros te proveemos libros, <br> 
-                            audios, videos de calidad, con sus ejercicios correspondientes.</p>
-        <button class="boton" >Ver mas</button>
-        </article>
-        <article class="plan3Cursos">
-        <h4 class="subtituloTres">Preparación para exámenes</h4>
-        <p class="textoCajas">Entrevista de nivelación + matrícula sin costo adicional. <br> 
-                            Rendí los exámanes internaciones que necesites con preparación <br>
-                            individual. </p>
-        <button class="boton" >Ver mas</button>
-    </article>    
-</section>
+<div class="row">
+    <div class="col-sm-4">
+      <div  class="card"  >
+        <div   class="card-body"  >
+          <h5 class="card-title">Clases individuales</h5>
+          <p class="card-text">Profesores calificados, con amplia experiencia <br> 
+            para acompañarte en el proceso de aprendizaje. </p></p>
+            <button class="boton">Ver mas</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div  class="card">
+        <div class="card-body" >
+          <h5 class="card-title">Cursos grupales</h5>
+          <p class="card-text">100% material digital. Nosotros te proveemos libros, <br> 
+            audios y videos de calidad</p>
+            <button class="boton">Ver mas</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+        <div  class="card">
+          <div class="card-body" >
+            <h5 class="card-title">Preparación para exámene</h5>
+            <p class="card-text">Nivelación + matrícula sin costo adicional.
+                Rendí exámanes internacionales con preparacion individual.</p>
+            <button class="boton">Ver mas</button>
+          </div>
+        </div>
+      </div>
+</div>    
 <!--Fin presentación de cursos-->
 <footer class="footer">
     <p class="textoFooter">2022. Todos los derechos reservados</p>
