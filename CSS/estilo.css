@@ -1,528 +1,411 @@
-*{
-    margin: 0px;
-    margin-bottom: 0px;
-    box-sizing: border-box;
-}
+@charset "UTF-8";
+/*COLORES*/
+* {
+  margin: 0px;
+  margin-bottom: 0px;
+  box-sizing: border-box; }
 
+body {
+  font-family: 'Roboto', sans-serif; }
 
-body{
-    font-family: 'Roboto', sans-serif;
-}
+.header {
+  background-color: #012f85;
+  height: 150; }
 
-.header{
-    background-color: #012f85;
-    height: 150;
-}
+.navbar {
+  margin-left: 35px; }
 
-.navbar{
-    margin-left: 35px;
-}
+.logo {
+  width: 130px;
+  height: 80px;
+  margin-left: 0px; }
 
-.logo{
-    width: 130px;
-    height: 80px;
-    margin-left: 0px;
-}
+ul li {
+  list-style-type: none;
+  margin-left: 35px; }
 
-ul li{
-    list-style-type: none;
-    margin-left: 35px;
-}
-
-ul li a{
-    color: white;
-    text-decoration: none;
-    margin-left: 60px;
-}
+ul li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 60px; }
 
 .imagenPrincipal {
-    background-image: url(../Imágenes/foto\ 2.jpg);
-    background-size: cover;
-    height: 582px;
-    margin-top: 0px;
-}
+  background-image: url(../Imágenes/foto2.jpg);
+  background-size: cover;
+  height: 582px;
+  margin-top: 0px; }
 
 .imagenPrincipal2 {
-    background-image: url(../Imágenes/foto\ 6.jpg);
-    background-size: 1400px;
-    height: 582px;
-    margin-top: 0px;
-}
+  background-image: url(../Imágenes/foto6.jpg);
+  background-size: 1400px;
+  height: 582px;
+  margin-top: 0px; }
 
-.subtitulo{
-    color: white;
-    font-size: 30px;
-    font-weight: 500px;
-}
+.subtitulo {
+  color: white;
+  font-size: 30px;
+  font-weight: 500px; }
 
-.textoImagen{
-    color: white;
-    font-size: 18px;
-    font-weight: 100px;
-}
+.textoImagen {
+  color: white;
+  font-size: 18px;
+  font-weight: 100px; }
 
-.contenedorImagen{
+.contenedorImagen {
+  border-style: solid;
+  border-radius: 5%;
+  background-color: #5e5e5e8f;
+  border-color: rgba(0, 0, 0, 0);
+  width: 500px;
+  height: 120px;
+  margin-top: -150px;
+  margin-left: 20px; }
+
+.subtituloDos {
+  font-size: 30px;
+  color: #ce1125;
+  margin-top: 100px;
+  margin-left: 10px;
+  margin-bottom: 40px; }
+
+.tituloCard {
+  font-weight: 600; }
+
+.subtituloTres {
+  font-size: 18px;
+  margin-top: 10px; }
+
+.articulos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 450px;
+  grid-template-areas: "plan1 plan2 plan3";
+  justify-items: center; }
+
+.plan1 {
+  grid-area: plan1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: #ffd250;
+  align-items: center;
+  justify-items: center; }
+
+.plan2 {
+  grid-area: plan2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: #ffd250;
+  align-items: center;
+  justify-items: center; }
+
+.plan3 {
+  grid-area: plan3;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: #ffd250;
+  align-items: center;
+  justify-items: center; }
+
+.boton {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 5px;
+  Width: 150px;
+  Height: 35px;
+  color: #FFFFFF;
+  font-weight: 500;
+  background-color: #ce11248c;
+  border-radius: 5px; }
+
+.boton:hover {
+  background-color: #ce1125; }
+
+.footer {
+  background-color: #012f85;
+  color: #FFFFFF;
+  height: 93px;
+  margin-top: 10px; }
+
+.textoFooter {
+  text-align: center;
+  margin-top: 20px; }
+
+.textoCajas {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 5px; }
+
+.filtro {
+  filter: grayscale(1); }
+
+.filtro:hover {
+  filter: grayscale(0); }
+
+/*VISTA CURSOS*/
+.contenedorTestimonios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 120px 60px;
+  grid-template-areas: "foto1 foto2 foto3" "texto1 texto2 texto3";
+  row-gap: 40px;
+  justify-items: center;
+  margin-top: 20px; }
+
+.imagenesAlumnos1 {
+  Width: 1200px;
+  Height: 720px;
+  margin-left: 60px;
+  margin-top: 30px; }
+
+.imagenesAlumnos2 {
+  Width: 1200px;
+  Height: 720px;
+  margin-left: 60px;
+  margin-top: 30px; }
+
+.imagenesAlumnos3 {
+  Width: 1200px;
+  Height: 720px;
+  margin-left: 60px;
+  margin-top: 30px; }
+
+.textoAlumnos1 {
+  font-size: 25px;
+  font-style: italic;
+  margin-left: 60px;
+  margin-top: 20px;
+  text-align: center; }
+
+.textoAlumnos2 {
+  font-size: 25px;
+  font-style: italic;
+  margin-left: 60px;
+  margin-top: 20px;
+  text-align: center; }
+
+.textoAlumnos3 {
+  font-size: 25px;
+  font-style: italic;
+  margin-left: 60px;
+  margin-top: 20px;
+  text-align: center; }
+
+/*VISTA TALLERES CORTOS*/
+.imagenPrincipal3 {
+  background-image: url(../Imágenes/foto8.jpg);
+  background-size: cover;
+  height: 582px;
+  margin-top: 0px; }
+
+.descripcion {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60px 150px;
+  grid-template-areas: "titulo titulo" "texto foto";
+  justify-items: center;
+  align-items: center;
+  row-gap: 50px;
+  margin: 50px; }
+
+.subtituloTalleres {
+  grid-area: titulo;
+  font-size: 30px;
+  color: #ce1125;
+  margin-top: 0px; }
+
+.imagenTalleres {
+  grid-area: foto;
+  margin-left: 150px;
+  height: 280px;
+  margin-top: 30px; }
+
+/* VISTA CONTACTOS */
+.imagenPrincipalContacto {
+  background-image: url(../Imágenes/foto8.jpg);
+  background-size: 1000px;
+  height: 582px;
+  margin-top: 0px; }
+
+.gridContacto {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "foto form"; }
+
+.imagenContacto {
+  grid-area: foto; }
+
+.formContacto {
+  grid-area: form;
+  margin-top: 60px;
+  margin-right: 30px; }
+
+.fotoContacto {
+  width: 400px;
+  height: 250px;
+  margin-top: 100px;
+  margin-left: 30px; }
+
+.subtituloContacto {
+  color: black;
+  font-weight: 600;
+  font-size: 30px;
+  font-weight: 500px;
+  margin-left: 30px;
+  margin-top: 10px; }
+
+.textoContacto {
+  color: black;
+  font-size: 18px;
+  font-weight: 100px;
+  margin-left: 30px; }
+
+/*VISTA EJERCICIOS GRATIS */
+.imagenPrincipal4 {
+  background-image: url(../Imágenes/foto9.jpg);
+  background-size: cover;
+  height: 582px;
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 300px; }
+
+.ejercicios {
+  background-color: #ffd250;
+  height: 150px;
+  width: 550px;
+  margin-left: 20px;
+  border-radius: 10px; }
+
+.listajercicios {
+  margin-top: 20px; }
+
+.contenedorEjercicios {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px; }
+
+.parrafoEjercicios {
+  margin-left: 60px;
+  margin-top: 0px; }
+
+.botonEjercicios {
+  margin-left: 60px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  Width: 150px;
+  Height: 35px;
+  color: #FFFFFF;
+  font-weight: 500;
+  background-color: #ce1125;
+  border-radius: 5px; }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 100px;
+    grid-template-areas: "logo"  "nav";
+    background-color: #012f85; }
+  .articulos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas: "plan1"  "plan2"  "plan3";
+    column-gap: 20px;
+    justify-items: center;
+    justify-content: center; }
+  .contenedorImagen {
     border-style: solid;
     border-radius: 5%;
     background-color: #5e5e5e8f;
     border-color: rgba(0, 0, 0, 0);
-    width: 500px;
-    height: 120px;
     margin-top: -150px;
-    margin-left: 20px;
-}
-
-.subtituloDos{
-    font-size: 30px;
-    color: #ce1125;
-    margin-top: 100px;
-    margin-left: 10px;
-    margin-bottom: 40px;
-}
-
-.tituloCard{
-    font-weight: 600;
-}
-
-.subtituloTres{
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.articulos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 450px;
-    grid-template-areas: "plan1 plan2 plan3";
-    justify-items: center;
-} 
-
-.plan1{
-    grid-area: plan1;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    background-color: #ffd250;
-    align-items: center;
-    justify-items: center;
-}
-
-.plan2{
-    grid-area: plan2;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    background-color: #ffd250;
-    align-items: center;
-    justify-items: center;
-}
-
-.plan3{
-    grid-area: plan3;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    background-color: #ffd250;
-    align-items: center;
-    justify-items: center;
-}
-
-
-.boton{
-    font-weight: 400;
-    font-size: 18px;
-    margin-top: 5px;
-    Width: 150px;
-    Height: 35px;
-    color: #FFFFFF;
-    font-weight: 500;
-    background-color: #ce11248c;
-    border-radius: 5px;
-}
-
-.boton:hover{
-    background-color:#ce1125;
-}
-
-.footer{
+    margin-left: 20px; }
+  .footer {
     background-color: #012f85;
     color: #FFFFFF;
+    width: 1200px;
     height: 93px;
-    margin-top: 10px;
-}
-
-.textoFooter{
-    text-align: center;
-    margin-top: 20px;
-}
-
-.textoCajas{
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 5px;
-}
-
-.filtro{
-    filter: grayscale(1);
-}
-
-.filtro:hover{
-    filter: grayscale(0);
-}
-
-/*VISTA CURSOS*/
-
-.contenedorTestimonios{
+    margin-top: 20px; }
+  .imagenPrincipal {
+    background-image: url(../Imágenes/foto2.jpg);
+    background-size: 1000px;
+    height: 582px;
+    margin-top: 0px; }
+  .contenedorTestimonios {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 120px 60px;
-    grid-template-areas: "foto1 foto2 foto3"
-                        "texto1 texto2 texto3";
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 60px 120px 60px 120px 60px;
+    grid-template-areas: "foto1" "texto1" "foto2"  "texto2" "foto3" "texto3";
     row-gap: 40px;
     justify-items: center;
-    margin-top: 20px;
-
-}
-
-.imagenesAlumnos1{
-    Width: 1200px;
-    Height: 720px;
-    margin-left: 60px;
-    margin-top: 30px;
-}
-
-.imagenesAlumnos2{
-    Width: 1200px;
-    Height: 720px;
-    margin-left: 60px;
-    margin-top: 30px;
-}
-
-.imagenesAlumnos3{
-    Width: 1200px;
-    Height: 720px;
-    margin-left: 60px;
-    margin-top: 30px;
-}
-
-.textoAlumnos1{
-    font-size: 25px;
-    font-style: italic;
-    margin-left: 60px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.textoAlumnos2{
-    font-size: 25px;
-    font-style: italic;
-    margin-left: 60px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.textoAlumnos3{
-    font-size: 25px;
-    font-style: italic;
-    margin-left: 60px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-
-
-/*VISTA TALLERES CORTOS*/
-
-.imagenPrincipal3 {
-    background-image: url(../Imágenes/foto\ 8.jpg);
-    background-size: cover;
-    height: 582px;
-    margin-top: 0px;
-}
-
-.descripcion{
+    margin-top: 20px; }
+  .descripcion {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 60px 150px;
-    grid-template-areas: "titulo titulo"
-                        "texto foto";
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "titulo" "foto";
     justify-items: center;
     align-items: center;
     row-gap: 50px;
-    margin: 50px;
-
-}
-
-.subtituloTalleres{
+    margin: 50px; }
+  .subtituloTalleres {
     grid-area: titulo;
     font-size: 30px;
     color: #ce1125;
-    margin-top: 0px;
-}
-
-.imagenTalleres{
+    margin-top: 0px; }
+  .imagenTalleres {
     grid-area: foto;
     margin-left: 150px;
     height: 280px;
-    margin-top: 30px;
-}
+    margin-top: 30px; } }
 
-
-/* VISTA CONTACTOS */
-
-.imagenPrincipalContacto{
-    background-image: url(../Imágenes/foto\ 8.jpg);
-    background-size: 1000px;
-    height: 582px;
-    margin-top: 0px;   
-}
-
-.gridContacto{
+@media screen and (max-width: 480px) {
+  .header {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    grid-template-areas: "foto form";
-}
-
-.imagenContacto{
-    grid-area: foto;
-}
-
-.formContacto{
-    grid-area: form;
-    margin-top: 60px;
-    margin-right: 30px;
-
-
-}
-
-.fotoContacto{
-    width: 400px;
-    height: 250px;
-    margin-top: 100px;
-    margin-left: 30px;
-}
-
-.subtituloContacto{
-    color: black;
-    font-weight: 600;
-    font-size: 30px;
-    font-weight: 500px;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
-.textoContacto{
-    color: black;
-    font-size: 18px;
-    font-weight: 100px;
-    margin-left: 30px;
-}
-
-
-/*VISTA EJERCICIOS GRATIS */
-
-.imagenPrincipal4 {
-    background-image: url(../Imágenes/foto\ 9.jpg);
-    background-size: cover;
-    height: 582px;
-    margin-top: 0px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    height: 300px;
-}
-
-.ejercicios{
-    background-color: #ffd250;
-    height: 150px;
-    width: 550px;
-    margin-left: 20px;
-    border-radius: 10px;
-
-}
-
-.listajercicios{
-    margin-top: 20px;
-}
-
-.contenedorEjercicios{
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-}
-
-.parrafoEjercicios{
-    margin-left: 60px;
-    margin-top: 0px;
-}
-
-.botonEjercicios{
-    margin-left: 60px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-size: 18px;
-    Width: 150px;
-    Height: 35px;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 100px;
+    grid-template-areas: "logo"  "nav";
+    background-color: #012f85; }
+  .articulos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas: "plan1"  "plan2"  "plan3";
+    column-gap: 20px;
+    justify-items: center;
+    justify-content: center; }
+  .contenedorImagen {
+    border-style: solid;
+    border-radius: 5%;
+    background-color: #5e5e5e8f;
+    border-color: rgba(0, 0, 0, 0);
+    margin-top: -150px;
+    margin-left: 20px; }
+  .footer {
+    background-color: #012f85;
     color: #FFFFFF;
-    font-weight: 500;
-    background-color: #ce1125;
-    border-radius: 5px;
-}
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width:768px) {
-    .header{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100px 100px;
-        grid-template-areas: "logo" 
-                            "nav";
-        background-color: #012f85;
-    }
-
-    .articulos{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 400px 400px 400px;
-        grid-template-areas: "plan1" 
-                            "plan2" 
-                            "plan3";
-        column-gap: 20px;
-        justify-items: center;
-        justify-content: center;
-    } 
-
-    .contenedorImagen{
-        border-style: solid;
-        border-radius: 5%;
-        background-color: #5e5e5e8f;
-        border-color: rgba(0, 0, 0, 0);
-        margin-top: -150px;
-        margin-left: 20px;
-    }
-
-    .footer{
-        background-color: #012f85;
-        color: #FFFFFF;
-        width: 1200px;
-        height: 93px;
-        margin-top: 20px;
-    }
-
-    .imagenPrincipal {
-        background-image: url(../Imágenes/foto\ 2.jpg);
-        background-size: 1000px;
-        height: 582px;
-        margin-top: 0px;
-    }
-
-    .contenedorTestimonios{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 120px 60px 120px 60px 120px 60px;
-        grid-template-areas: "foto1"
-                            "texto1"
-                            "foto2" 
-                            "texto2"
-                            "foto3"
-                            "texto3";
-        row-gap: 40px;
-        justify-items: center;
-        margin-top: 20px;
-    
-    }
-
-    .descripcion{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100%;
-        grid-template-areas: "titulo"
-                            "foto";
-        justify-items: center;
-        align-items: center;
-        row-gap: 50px;
-        margin: 50px;
-    
-    }
-
-    .subtituloTalleres{
-        grid-area: titulo;
-        font-size: 30px;
-        color: #ce1125;
-        margin-top: 0px;
-    }
-    
-    .imagenTalleres{
-        grid-area: foto;
-        margin-left: 150px;
-        height: 280px;
-        margin-top: 30px;
-    }
-
-}
-
-@media screen and (max-width:480px) {
-    .header{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100px 100px;
-        grid-template-areas: "logo" 
-                            "nav";
-        background-color: #012f85;
-    }
-
-    .articulos{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 400px 400px 400px;
-        grid-template-areas: "plan1" 
-                            "plan2" 
-                            "plan3";
-        column-gap: 20px;
-        justify-items: center;
-        justify-content: center;
-    } 
-
-    .contenedorImagen{
-        border-style: solid;
-        border-radius: 5%;
-        background-color: #5e5e5e8f;
-        border-color: rgba(0, 0, 0, 0);
-        margin-top: -150px;
-        margin-left: 20px;
-    }
-
-    .footer{
-        background-color: #012f85;
-        color: #FFFFFF;
-        width: 480px;
-        height: 93px;
-        margin-top: 20px;
-    }
-
-    .imagenPrincipal {
-        background-image: url(../Imágenes/foto\ 2.jpg);
-        background-size: 800px;
-        height: 582px;
-        margin-top: 0px;
-    }
-
-    .contenedorTestimonios{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 120px 60px 120px 60px 120px 60px;
-        grid-template-areas: "foto1"
-                            "texto1"
-                            "foto2" 
-                            "texto2"
-                            "foto3"
-                            "texto3";
-        row-gap: 40px;
-        justify-items: center;
-        margin-top: 20px;
-    
-    }
-}
+    width: 480px;
+    height: 93px;
+    margin-top: 20px; }
+  .imagenPrincipal {
+    background-image: url(../Imágenes/foto2.jpg);
+    background-size: 800px;
+    height: 582px;
+    margin-top: 0px; }
+  .contenedorTestimonios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 60px 120px 60px 120px 60px;
+    grid-template-areas: "foto1" "texto1" "foto2"  "texto2" "foto3" "texto3";
+    row-gap: 40px;
+    justify-items: center;
+    margin-top: 20px; } }
