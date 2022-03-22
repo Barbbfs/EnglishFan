@@ -83,7 +83,8 @@ ul li a{
 }
 
 .tituloCard{
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .subtituloTres{
@@ -129,21 +130,32 @@ ul li a{
     justify-items: center;
 }
 
+/* EXTEND BOTONES */
 
 .boton{
+    Width: 150px;
+    Height: 35px;
     font-weight: 400;
     font-size: 18px;
     margin-top: 5px;
-    Width: 150px;
-    Height: 35px;
-    color: #FFFFFF;
     font-weight: 500;
-    background-color: #ce11248c;
     border-radius: 5px;
 }
 
-.boton:hover{
+.botonCards{
+    @extend .boton;
+    background-color: #ce1124da;
+    color: #FFFFFF;
+}
+
+.botonCards:hover{
     background-color: $colorPrincipal;
+}
+
+.botonEnviar{
+    @extend .boton;
+    background-color: $colorTerciario;
+    color: #000;
 }
 
 .footer{
@@ -170,6 +182,10 @@ ul li a{
 
 .filtro:hover{
     filter: grayscale(0);
+}
+
+.fondoCards{
+    background-image: url(../Imágenes/fondos-09.png);
 }
 
 /*VISTA CURSOS*/
@@ -359,19 +375,6 @@ ul li a{
     margin-top: 0px;
 }
 
-.botonEjercicios{
-    margin-left: 60px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-size: 18px;
-    Width: 150px;
-    Height: 35px;
-    color: #FFFFFF;
-    font-weight: 500;
-    background-color: $colorPrincipal;
-    border-radius: 5px;
-}
 
 /* MEDIA QUERIES */
 
