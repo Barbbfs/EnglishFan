@@ -15,8 +15,7 @@
     <title>English Fan - Cursos</title>
 </head>
 <body>
-    <header>
-        <header class="header">
+    <header class="header">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"></a>
@@ -27,10 +26,10 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Cursos.html">Cursos</a>
+                            <a class="nav-link active" href="Cursos.html">Cursos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="tallerescortos.html">Talleres Cortos</a>
@@ -47,48 +46,59 @@
             </nav>
     </header>
     <section class="imagenPrincipal2" ></section>
-      <div class="contenedorImagen">
-          <h1 class="subtitulo">Estudia con nosotros</h1>
-            <p class="textoImagen">Clases en directo y diferidas para que veas cuando quieras <br>
-            Preparación para exámenes internacionales <br>
-            Amplios horarios de cursado </p>
-      </div>
+    <div class="contenedorImagen">
+      <h1 class="subtitulo">Estudia con nosotros</h1>
+      <p class="textoImagen">Clases en directo y diferidas para que veas cuando quieras <br>
+        Preparación para exámenes internacionales <br>
+        Amplios horarios de cursado </p>
+    </div>
 <!--Contenido principal con testimonios de alumnxs-->
     <h2 class="subtituloDos">Qué dicen nuestrxs alumnxs <h2>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../Imágenes/estudiante 1.jpg" class="imagenesAlumnos1" class="d-block w-100" alt="...">
-              <p class="textoAlumnos1"> "Los grupos son realmente reducidos y estamos todos a la par en <br> 
-              cuando a nivel". 
+            <img src="../Imágenes/estudiante 1.jpg" class="imagenesAlumnos" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p class="textoAlumnos1">"Los grupos son realmente reducidos y estamos todos a la par en <br> 
+                cuando a nivel".</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../Imágenes/estudiante 2.jpg"  class="imagenesAlumnos" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p class="textoAlumnos2"> "Las clases de conversacion grupales son super divertidas y dinamicas". 
               </p>
+            </div>
           </div>
           <div class="carousel-item">
-              <img src="../Imágenes/estudiante 2.jpg" class="imagenesAlumnos2" class="d-block w-100" alt="...">
-                <p class="textoAlumnos2"> "Las clases de conversacion grupales son super divertidas y dinamicas". 
-                </p>
-          </div>
-          <div class="carousel-item">
-              <img src="../Imágenes/estudiante 3.jpg" class="imagenesAlumnos3"  class="d-block w-100" alt="...">
-                <p class="textoAlumnos2"> "Aprendes a tu ritmo y en relacion a tu nivel previo. Muy recomendable". 
-                </p>
+            <img src="../Imágenes/foto 11.jpg" class="imagenesAlumnos" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p class="textoAlumnos2"> "Aprendes a tu ritmo y en relacion a tu nivel previo. Muy recomendable". 
+              </p>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
 <!--Presentación de cursos-->
 <h2 class="subtituloDos">Nuestros cursos</h2>
-<div class="row">
-    <div class="col-sm-4">
-      <div  class="card"  >
-        <div   class="card-body"  >
+<section class="fondoCards">
+<div class="row" >
+    <div class="col-sm-4"  >
+      <div  class="card" >
+        <div class="card-body" >
           <h5 class="card-title">Clases individuales</h5>
           <p class="card-text">Profesores calificados, con amplia experiencia <br> 
             para acompañarte en el proceso de aprendizaje. </p></p>
@@ -116,10 +126,12 @@
           </div>
         </div>
       </div>
-</div>    
+</div>   
+</section> 
 <!--Fin presentación de cursos-->
 <footer class="footer">
-    <p class="textoFooter">2022. Todos los derechos reservados</p>
+  <p class="textoFooter">2022 <br> 
+      Todos los derechos reservados.</p>
 </footer>
 </body>
 </html>
