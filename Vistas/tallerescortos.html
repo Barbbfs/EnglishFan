@@ -15,36 +15,43 @@
     <title>English Fan - Talleres Cortos</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+    <header class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <img src="../Imágenes/logo-05.png" class="logo" alt="">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="logo" src="../Imágenes/logo-05.png" alt="">
+              <a class="navbar-brand" href="./index.html"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Cursos.html">Cursos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="tallerescortos.html">Talleres Cortos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ejerciciosgratis.html">Ejercicios Gratis</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                </ul>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="./Cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="./tallerescortos.html">Talleres</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./ejerciciosgratis.html">Ejercicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./contacto.html">Contacto</a>
+                      </li>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </nav>
-</header>
+          </nav>
+    </header>
     <section class="imagenPrincipal3" ></section>
         <div class="contenedorImagen">
             <h1 class="subtitulo">Estudia con nosotros</h1>
@@ -130,8 +137,27 @@
 </section>
 <!--Fin de contenido-->
 <footer class="footer">
-    <p class="textoFooter">2022 <br> 
-        Todos los derechos reservados.</p>
-</footer>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="textoFooter">
+                English Fan
+            </p>
+            <p class="textoFooter">
+                contacto@englishfan.com.ar
+            </p>
+        </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="textoFooter">@English fan</p>
+            </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="textoFooter">
+                Todos los derechos reservados <br>
+                Diseñadora: Barbara Sabella
+                </p>
+        </div>
+    </div>
+  </div>
+    </footer>
 </body>
 </html>

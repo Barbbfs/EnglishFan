@@ -14,9 +14,6 @@ body {
   height: 80px;
   margin-left: 0px; }
 
-.navbar {
-  margin-left: 35px; }
-
 ul li {
   list-style-type: none;
   margin-left: 35px; }
@@ -25,9 +22,6 @@ ul li a {
   color: white;
   text-decoration: none;
   margin-left: 60px; }
-
-.navbar-nav {
-  margin-left: 150px; }
 
 .imagenPrincipal2 {
   background-image: url(../Imágenes/foto6.jpg);
@@ -42,18 +36,7 @@ ul li a {
 
 .textoImagen {
   color: white;
-  font-size: 18px;
   font-weight: 100px; }
-
-.contenedorImagen {
-  border-style: solid;
-  border-radius: 10px;
-  background-color: #5e5e5e8f;
-  border-color: rgba(0, 0, 0, 0);
-  width: 500px;
-  height: fit-content;
-  margin-top: -150px;
-  margin-left: 20px; }
 
 .tituloCard {
   font-size: 20px;
@@ -91,10 +74,10 @@ ul li a {
   padding-right: 5px; }
 
 .filtro {
-  filter: grayscale(1); }
+  filter: grayscale(0); }
 
 .filtro:hover {
-  filter: grayscale(0); }
+  filter: grayscale(1); }
 
 /*VISTA CURSOS*/
 .contenedorTestimonios {
@@ -137,7 +120,7 @@ ul li a {
   background-image: url(../Imágenes/fondos-09.png); }
 
 .fondoCards {
-  background-color: #edf0f3;
+  background-color: #ffd250;
   min-height: 300px;
   padding-bottom: 50px; }
 
@@ -204,26 +187,11 @@ ul li a {
   padding: 20px 0px;
   border-radius: 10px; }
 
-.listajercicios {
-  margin-top: 20px; }
-
-.contenedorEjercicios {
-  display: flex;
-  flex-direction: column;
-  margin-top: 60px; }
-
-.parrafoEjercicios {
-  margin-left: 60px; }
-
 /* MEDIA QUERIES */
 @media screen and (max-width: 480px) {
-  .header {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 100px;
-    grid-template-areas: "logo"  "nav";
-    background-color: #012f85;
-    height: 320px; }
+  .navbar {
+    width: 500px;
+    background-color: #edf0f3; }
   .subtituloDos {
     font-size: 30px;
     color: #ce1125;
@@ -231,27 +199,26 @@ ul li a {
     margin-left: 10px;
     margin-bottom: 10px; }
   .articulos {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 400px 400px 400px;
-    grid-template-areas: "plan1"  "plan2"  "plan3";
     column-gap: 20px;
     justify-items: center;
     justify-content: center;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-left: 40px; }
   .contenedorImagen {
     border-style: solid;
     border-radius: 5px;
     background-color: #5e5e5e8f;
     border-color: rgba(0, 0, 0, 0);
     margin-top: -150px;
-    margin-left: 20px; }
+    margin-left: 20px;
+    width: 450px; }
   .footer {
-    background-color: #012f85;
-    color: #FFFFFF;
-    width: 480px;
-    height: 53px;
-    margin-top: 20px; }
+    background-color: #edf0f3;
+    color: #000;
+    width: 500px;
+    height: 250px;
+    margin-top: 20px;
+    align-items: center; }
   .textoFooter {
     text-align: center;
     margin-top: 20px; }
@@ -266,6 +233,14 @@ ul li a {
     background-size: cover; }
   .ejercicios {
     width: 450px; }
+  .listajercicios {
+    margin-top: 20px; }
+  .contenedorEjercicios {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px; }
+  .parrafoEjercicios {
+    margin-left: 60px; }
   /*CONTACTO*/
   .gridContacto {
     display: flex;
@@ -313,49 +288,42 @@ ul li a {
     margin-bottom: 10px; }
   .imagenTalleres {
     grid-area: foto;
-    margin-left: 50px;
+    margin-left: 10px;
     height: 280px;
     margin-top: 110px; }
   .fondoCardsTalleres {
-    background-image: url(../Imágenes/fondos-07.png);
-    height: 1000px;
-    margin-bottom: 50px; }
+    background-image: url(../Imágenes/fondos-07.png); }
   /*INICIO*/
   .planes {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    background-color: #ffd250;
+    background-color: #012f85;
+    color: #FFFFFF;
     align-items: center;
     justify-items: center; } }
 
 @media screen and (min-width: 900px) {
-  .header {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 200px;
-    grid-template-areas: "logo"  "nav";
-    background-color: #012f85;
-    height: 300px; }
+  .navbar {
+    width: 900px;
+    background-color: #edf0f3; }
   .articulos {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 400px 400px 400px;
-    grid-template-areas: "plan1"  "plan2"  "plan3";
     column-gap: 20px;
     justify-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-left: 350px; }
   .contenedorImagen {
     border-style: solid;
     border-radius: 5px;
     background-color: #5e5e5e8f;
     border-color: rgba(0, 0, 0, 0);
-    margin: -150px 20px 0px 20px; }
+    margin: -150px 20px 0px 50px;
+    width: 100px; }
   .footer {
-    background-color: #012f85;
-    color: #FFFFFF;
-    width: 1200px;
-    height: 53px;
+    background-color: #edf0f3;
+    color: #000;
+    width: 1000px;
+    height: 200px;
     margin-top: 20px;
     text-align: center; }
   .textoFooter {
@@ -431,15 +399,14 @@ ul li a {
     margin-left: 10px;
     margin-bottom: 10px; }
   .fondoCardsTalleres {
-    background-image: url(../Imágenes/fondos-07.png);
-    height: 300px;
-    margin-bottom: 50px; }
+    background-image: url(../Imágenes/fondos-07.png); }
   /*INICIO*/
   .planes {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    background-color: #ffd250;
+    background-color: #012f85;
+    color: #FFFFFF;
     align-items: center;
     justify-items: center; } }
 
@@ -448,33 +415,38 @@ ul li a {
     background-size: cover;
     height: 582px;
     margin-top: 0px; }
+  .contenedorImagen {
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #5e5e5e8f;
+    border-color: rgba(0, 0, 0, 0);
+    width: 500px;
+    height: fit-content;
+    margin-top: -150px;
+    margin-left: 20px; }
+  .navbar {
+    background-color: #edf0f3;
+    width: auto; }
   .subtituloDos {
     font-size: 30px;
     color: #ce1125;
     margin-top: 50px;
     margin-left: 10px;
     margin-bottom: 40px; }
-  .header {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 200px;
-    grid-template-areas: "logo"  "nav";
-    background-color: #012f85;
-    height: 100px; }
   .articulos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 450px;
     grid-template-areas: "plan1 plan2 plan3";
+    margin-left: 20px;
     justify-items: center; }
   .footer {
-    background-color: #012f85;
-    color: #FFFFFF;
-    height: 53px;
-    width: 100%;
-    margin-top: 10px; }
+    background-color: #edf0f3;
+    color: #000;
+    width: 1400px;
+    height: 100px;
+    margin-top: 20px; }
   .textoFooter {
-    text-align: center;
     margin-top: 20px; }
   /*VISTA TALLERES CORTOS*/
   .imagenPrincipal3 {
@@ -516,6 +488,7 @@ ul li a {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    background-color: #ffd250;
+    background-color: #012f85;
+    color: #FFFFFF;
     align-items: center;
     justify-items: center; } }
