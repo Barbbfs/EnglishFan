@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /*COLORES*/
-/*BOTONOES*/
 * {
   margin: 0px;
   margin-bottom: 0px;
@@ -22,12 +21,6 @@ ul li a {
   color: white;
   text-decoration: none;
   margin-left: 60px; }
-
-.imagenPrincipal2 {
-  background-image: url(../Imágenes/foto6.jpg);
-  background-size: 1400px;
-  height: 582px;
-  margin-top: 0px; }
 
 .subtitulo {
   color: white;
@@ -95,21 +88,7 @@ ul li a {
   margin-left: 60px;
   margin-top: 30px; }
 
-.textoAlumnos1 {
-  font-size: 25px;
-  font-style: italic;
-  margin-left: 60px;
-  margin-top: 20px;
-  text-align: center; }
-
 .textoAlumnos2 {
-  font-size: 25px;
-  font-style: italic;
-  margin-left: 60px;
-  margin-top: 20px;
-  text-align: center; }
-
-.textoAlumnos3 {
   font-size: 25px;
   font-style: italic;
   margin-left: 60px;
@@ -118,11 +97,6 @@ ul li a {
 
 .fondosCards {
   background-image: url(../Imágenes/fondos-09.png); }
-
-.fondoCards {
-  background-color: #ffd250;
-  min-height: 300px;
-  padding-bottom: 50px; }
 
 .card {
   margin-top: 50px; }
@@ -169,16 +143,6 @@ ul li a {
   margin-left: 30px; }
 
 /*VISTA EJERCICIOS GRATIS */
-.imagenPrincipal4 {
-  background-image: url(../Imágenes/foto9.jpg);
-  background-size: cover;
-  height: 582px;
-  margin-top: 0px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  height: 300px; }
-
 .ejercicios {
   background-color: #ffd250;
   height: fit-content;
@@ -188,14 +152,14 @@ ul li a {
   border-radius: 10px; }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .navbar {
     width: 500px;
     background-color: #edf0f3; }
   .subtituloDos {
     font-size: 30px;
     color: #ce1125;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-left: 10px;
     margin-bottom: 10px; }
   .articulos {
@@ -222,14 +186,32 @@ ul li a {
   .textoFooter {
     text-align: center;
     margin-top: 20px; }
+  .imagenPrincipal4 {
+    background-image: url(../Imágenes/foto9.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 500px; }
+  /*imagenes fondos section*/
   .imagenPrincipal {
     background-image: url(../Imágenes/foto2.jpg);
-    background-size: 800px;
-    height: 582px;
+    background-size: cover;
+    width: 500px;
+    height: 600px;
     margin-top: 0px; }
+  .contenedorImagen {
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #5e5e5e8f;
+    border-color: rgba(0, 0, 0, 0);
+    margin: -170px 20px 0px 50px;
+    width: 400px; }
+  .textoImagen {
+    color: white;
+    font-weight: 100px;
+    font-size: 14px; }
   .imagenPrincipal2 {
     background-image: url(../Imágenes/foto6.jpg);
-    height: 300px;
+    height: 600px;
     background-size: cover; }
   .ejercicios {
     width: 450px; }
@@ -250,7 +232,8 @@ ul li a {
   .formContacto {
     grid-area: form;
     margin-top: 60px;
-    margin-right: 30px; }
+    margin-right: 30px;
+    margin-left: 20px; }
   .fotoContacto {
     width: 400px;
     height: 250px;
@@ -258,8 +241,15 @@ ul li a {
     margin-left: 30px; }
   /* CURSOS */
   .imagenesAlumnos {
-    height: 400px;
-    width: 600px; }
+    height: 250px;
+    width: 400px; }
+  .textoAlumnos2 {
+    font-size: 8px;
+    color: #000;
+    font-style: italic;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center; }
   /*VISTA TALLERES CORTOS*/
   .imagenPrincipal3 {
     background-image: url(../Imágenes/foto8.jpg);
@@ -279,7 +269,10 @@ ul li a {
     grid-area: titulo;
     font-size: 30px;
     color: #ce1125;
-    margin-top: 0px; }
+    margin-top: 30px; }
+  .parrafoTalleres {
+    margin-top: 30px;
+    margin-bottom: 30px; }
   .subtituloTres {
     font-size: 30px;
     color: #ce1125;
@@ -293,13 +286,26 @@ ul li a {
     margin-top: 110px; }
   .fondoCardsTalleres {
     background-image: url(../Imágenes/fondos-07.png); }
+  .botonFlotante {
+    width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background: #ce1125;
+    border: none;
+    border-radius: 15px;
+    font-family: Roboto;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    box-shadow: 4px 5px 5px 1px rgba(0, 0, 0, 0.2); }
   /*INICIO*/
   .planes {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    background-color: #012f85;
-    color: #FFFFFF;
+    background-color: #ffd250;
+    color: #000;
     align-items: center;
     justify-items: center; } }
 
@@ -312,28 +318,15 @@ ul li a {
     justify-items: center;
     justify-content: center;
     margin-left: 350px; }
-  .contenedorImagen {
-    border-style: solid;
-    border-radius: 5px;
-    background-color: #5e5e5e8f;
-    border-color: rgba(0, 0, 0, 0);
-    margin: -150px 20px 0px 50px;
-    width: 100px; }
   .footer {
     background-color: #edf0f3;
     color: #000;
     width: 1000px;
     height: 200px;
-    margin-top: 20px;
-    text-align: center; }
+    margin-top: 20px; }
   .textoFooter {
     text-align: center;
     margin-top: 20px; }
-  .imagenPrincipal {
-    background-image: url(../Imágenes/foto2.jpg);
-    background-size: 1000px;
-    height: 582px;
-    margin-top: 0px; }
   .subtituloDos {
     font-size: 30px;
     color: #ce1125;
@@ -357,6 +350,18 @@ ul li a {
     align-items: center;
     row-gap: 50px;
     margin: 50px; }
+  .imagenPrincipal {
+    background-image: url(../Imágenes/foto2.jpg);
+    background-size: cover;
+    height: 900px;
+    margin-top: 0px; }
+  .contenedorImagen {
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #5e5e5e8f;
+    border-color: rgba(0, 0, 0, 0);
+    margin: -150px 20px 0px 50px;
+    width: 500px; }
   .subtituloTalleres {
     grid-area: titulo;
     font-size: 30px;
@@ -367,6 +372,20 @@ ul li a {
     margin-left: 150px;
     height: 280px;
     margin-top: 30px; }
+  /*VISTA CURSOS*/
+  .imagenesAlumnos {
+    Width: 800px;
+    Height: 400px;
+    margin-left: 60px;
+    margin-top: 30px; }
+  .imagenPrincipal2 {
+    background-image: url(../Imágenes/foto6.jpg);
+    height: 600px;
+    background-size: cover; }
+  .fondoCards {
+    background-color: #ffd250;
+    min-height: 200px;
+    padding-bottom: 20px; }
   /*VISTA TALLERES CORTOS*/
   .imagenPrincipal3 {
     background-image: url(../Imágenes/foto8.jpg);
@@ -400,20 +419,41 @@ ul li a {
     margin-bottom: 10px; }
   .fondoCardsTalleres {
     background-image: url(../Imágenes/fondos-07.png); }
+  .botonFlotante {
+    width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 450px;
+    background: #ce1125;
+    border: none;
+    border-radius: 15px;
+    font-family: Roboto;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    box-shadow: 4px 5px 5px 1px rgba(0, 0, 0, 0.2); }
   /*INICIO*/
   .planes {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    background-color: #012f85;
-    color: #FFFFFF;
+    background-color: #ffd250;
+    color: #000;
     align-items: center;
-    justify-items: center; } }
+    justify-items: center; }
+  /*EJERCICIOS*/
+  .imagenPrincipal4 {
+    background-image: url(../Imágenes/foto9.jpg);
+    background-size: cover;
+    height: 500px; }
+  .parrafoEjercicios {
+    margin-left: 60px; } }
 
 @media screen and (min-width: 900px) and (min-width: 1200px) {
   .imagenPrincipal {
+    background-image: url(../Imágenes/foto2.jpg);
     background-size: cover;
-    height: 582px;
+    height: 900px;
     margin-top: 0px; }
   .contenedorImagen {
     border-style: solid;
@@ -442,8 +482,8 @@ ul li a {
     justify-items: center; }
   .footer {
     background-color: #edf0f3;
+    width: 1500px;
     color: #000;
-    width: 1400px;
     height: 100px;
     margin-top: 20px; }
   .textoFooter {
@@ -483,12 +523,60 @@ ul li a {
     background-image: url(../Imágenes/fondos-07.png);
     height: 300px;
     margin-bottom: 50px; }
+  /*EJERCICIOS*/
+  .imagenPrincipal4 {
+    background-image: url(../Imágenes/foto9.jpg);
+    background-size: cover;
+    height: 650px; }
+  .subtituloDos {
+    font-size: 30px;
+    color: #ce1125;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-bottom: 10px; }
+  .parrafoEjercicios {
+    margin-left: 60px; }
+  /*CURSOS*/
+  .imagenPrincipal2 {
+    background-image: url(../Imágenes/foto6.jpg);
+    height: 800px;
+    background-size: cover; }
+  .imagenesAlumnos {
+    height: 800px;
+    width: 1500px;
+    justify-content: center; }
+  .textoAlumnos2 {
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center; }
+  .cardCursos :hover {
+    box-shadow: 4px 5px 5px 1px rgba(0, 0, 0, 0.2); }
+  .cardCursos .fondoCards {
+    background-color: #ffd250;
+    min-height: 300px;
+    padding-bottom: 50px; }
   /*INICIO*/
   .planes {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    background-color: #012f85;
-    color: #FFFFFF;
+    background-color: #ffd250;
+    color: #000;
     align-items: center;
-    justify-items: center; } }
+    justify-items: center; }
+  .botonFlotante {
+    width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 600px;
+    background: #ce1125;
+    border: none;
+    border-radius: 15px;
+    font-family: Roboto;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    box-shadow: 4px 5px 5px 1px rgba(0, 0, 0, 0.2); } }
