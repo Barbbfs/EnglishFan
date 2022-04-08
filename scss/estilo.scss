@@ -74,7 +74,6 @@ ul li a{
     color: #FFFFFF;
     margin-left: 60px;
     background:$colorPrincipal;
-
 }
 
 .botonCards:hover{
@@ -86,7 +85,12 @@ ul li a{
     background-color: $colorTerciario;
     color: #000;
     margin-top: 20px;
-
+}
+.botonCursos{
+    @extend .boton;
+    color: #FFFFFF;
+    margin-top: 30px;
+    background:$colorPrincipal;
 }
 
 .textoCajas{
@@ -343,6 +347,12 @@ ul li a{
     margin-top: 20px;
     text-align: center;
 }
+.botonCursos{
+    color: #FFFFFF;
+    margin-left: 60px;
+    margin-top: 30px;
+    background:$colorPrincipal;
+}
  /*VISTA TALLERES CORTOS*/
 
  .imagenPrincipal3 {
@@ -530,6 +540,12 @@ ul li a{
     min-height: 200px; 
     padding-bottom: 20px;
 }
+.botonCursos{
+    color: #FFFFFF;
+    margin-left: 450px;
+    margin-top: 30px;
+    background:$colorPrincipal;
+}
 
  /*VISTA TALLERES CORTOS*/
 
@@ -651,7 +667,7 @@ ul li a{
     } 
     .footer{
         background-color: #edf0f3;
-        width: 1500px;
+        width: 1400px;
         color: #000;
         height: 100px;
         margin-top: 20px;
@@ -748,7 +764,6 @@ ul li a{
     background-color: $colorTerciario;
     min-height: 300px; 
     padding-bottom: 50px;
-
 }
 
 /*INICIO*/
@@ -778,6 +793,13 @@ ul li a{
 .botonFlotante:hover{
     background-color: $colorSecundario;
 }
+.botonCursos{
+    color: #FFFFFF;
+    margin-left: 600px;
+    margin-top: 30px;
+    background:$colorPrincipal;
+}
+
 }
 
 

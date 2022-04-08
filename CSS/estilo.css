@@ -46,7 +46,7 @@ ul li a {
   box-shadow: inset; }
 
 /* EXTEND BOTONES */
-.boton, .botonCards, .botonEnviar {
+.boton, .botonCards, .botonEnviar, .botonCursos {
   width: 150px;
   height: 40px;
   border: none;
@@ -69,6 +69,11 @@ ul li a {
   background-color: #ffd250;
   color: #000;
   margin-top: 20px; }
+
+.botonCursos {
+  color: #FFFFFF;
+  margin-top: 30px;
+  background: #ce1125; }
 
 .textoCajas {
   padding-left: 10px;
@@ -260,6 +265,11 @@ ul li a {
     margin-left: 20px;
     margin-top: 20px;
     text-align: center; }
+  .botonCursos {
+    color: #FFFFFF;
+    margin-left: 60px;
+    margin-top: 30px;
+    background: #ce1125; }
   /*VISTA TALLERES CORTOS*/
   .imagenPrincipal3 {
     background-image: url(../Imágenes/foto8.jpg);
@@ -399,6 +409,11 @@ ul li a {
     background-color: #ffd250;
     min-height: 200px;
     padding-bottom: 20px; }
+  .botonCursos {
+    color: #FFFFFF;
+    margin-left: 450px;
+    margin-top: 30px;
+    background: #ce1125; }
   /*VISTA TALLERES CORTOS*/
   .imagenPrincipal3 {
     background-image: url(../Imágenes/foto8.jpg);
@@ -495,7 +510,7 @@ ul li a {
     justify-items: center; }
   .footer {
     background-color: #edf0f3;
-    width: 1500px;
+    width: 1400px;
     color: #000;
     height: 100px;
     margin-top: 20px; }
@@ -592,4 +607,9 @@ ul li a {
     color: #ffffff;
     box-shadow: 4px 5px 5px 1px rgba(0, 0, 0, 0.2); }
   .botonFlotante:hover {
-    background-color: #012f85; } }
+    background-color: #012f85; }
+  .botonCursos {
+    color: #FFFFFF;
+    margin-left: 600px;
+    margin-top: 30px;
+    background: #ce1125; } }
