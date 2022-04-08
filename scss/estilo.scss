@@ -46,34 +46,47 @@ ul li a{
     font-size: 18px;
     margin-top: 10px;
 }
+.cardCursos{
+    background-color: #edf0f3;
+}
+.cardCursos{
+    :hover{
+    box-shadow: inset;
+}
+}
 
 /* EXTEND BOTONES */
 
 .boton{
-    Width: 150px;
-    Height: 35px;
-    font-weight: 400;
-    font-size: 18px;
-    margin-top: 5px;
-    font-weight: 500;
-    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    font-family: Roboto;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.2);
 }
 
 .botonCards{
     @extend .boton;
-    background-color: #ce1124da;
     color: #FFFFFF;
     margin-left: 60px;
+    background:$colorPrincipal;
+
 }
 
 .botonCards:hover{
-    background-color: $colorPrincipal;
+    background-color: $colorSecundario;
 }
 
 .botonEnviar{
     @extend .boton;
     background-color: $colorTerciario;
     color: #000;
+    margin-top: 20px;
+
 }
 
 .textoCajas{
@@ -205,6 +218,7 @@ ul li a{
     }
     .subtituloDos{
         font-size: 30px;
+        font-weight: 500px ;
         color: $colorPrincipal;
         margin-top: 100px;
         margin-left: 10px;
@@ -373,6 +387,10 @@ ul li a{
     height: 280px;
     margin-top: 110px;
 }
+.imagenTalleres:hover{
+    transition: height 1500ms;
+    height: 300px;
+}
 
 .fondoCardsTalleres{
     background-image: url(../Imágenes/fondos-07.png);
@@ -391,6 +409,7 @@ ul li a{
     color: #ffffff;
     box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.2);
 }
+
 /*INICIO*/
 .planes{
     display: flex;
@@ -570,7 +589,6 @@ ul li a{
     color: #ffffff;
     box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.2);
 }
-
 /*INICIO*/
 .planes{
     display: flex;
@@ -726,15 +744,11 @@ ul li a{
     text-align: center;
 }
 
-.cardCursos{
-    :hover{
-    box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.2);
-}
 .fondoCards{
     background-color: $colorTerciario;
     min-height: 300px; 
     padding-bottom: 50px;
-}
+
 }
 
 /*INICIO*/
@@ -760,6 +774,9 @@ ul li a{
     letter-spacing: 0.03em;
     color: #ffffff;
     box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.2);
+}
+.botonFlotante:hover{
+    background-color: $colorSecundario;
 }
 }
 
